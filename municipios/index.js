@@ -14,9 +14,9 @@ function generateInfoSection(sprites, estados) {
 
   }
   
-  async function getEstados(name) {
+  async function getMunicipios(name) {
     
-      const data = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados`)
+      const data = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios`)
   
       const jsonData = await data.json()
 
